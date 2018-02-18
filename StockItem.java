@@ -1,145 +1,88 @@
-public class StockItem { 
+public class StockItem {
 
-  
+    private String invoiceNo;
+    private String stockCode;
+    private String description;
+    private int quantity;
+    private String invoiceDate;
+    private double unitPrice;
+    private String customerID;
+    private String country;
 
-    private String InvoiceNo; 
-
-    private String StockCode; 
-
-    private String Description; 
-
-    private int Quantity; 
-
-    private String InvoiceDate; 
-
-    private double UnitPrice; 
-
-    private String CustomerID; 
-
-    private String Country; 
-
-  
-
-    public StockItem(String invoiceNo, String stockCode, String description, 
-
-                     int quantity, String invoiceDate, double unitPrice, String customerID, String country) { 
-
-        InvoiceNo = invoiceNo; 
-
-        StockCode = stockCode; 
-
-        Description = description; 
-
-        Quantity = quantity; 
-
-        InvoiceDate = invoiceDate; 
-
-        UnitPrice = unitPrice; 
-
-        CustomerID = customerID; 
-
-        Country = country; 
-
+    public StockItem(String invoiceNo, String stockCode, String description,
+                     int quantity, String invoiceDate, double unitPrice, String customerID, String country) {
+        this.invoiceNo = invoiceNo;
+        this.stockCode = stockCode;
+        this.description = description;
+        this.quantity = quantity;
+        this.invoiceDate = invoiceDate;
+        this.unitPrice = unitPrice;
+        this.customerID = customerID;
+        this.country = country;
     }
 
+    public String getStockCode() {
+        return stockCode;
+    }
 
+    public void setStockCode(String stockCode) {
+        this.stockCode = stockCode;
+    }
 
-	public String getInvoiceNo() {
-		return InvoiceNo;
-	}
+    public String getInvoiceNo() {
+        return invoiceNo;
+    }
 
+    public void setInvoiceNo(String invoiceNo) {
+        this.invoiceNo = invoiceNo;
+    }
 
+    public String getDescription() {
+        return description;
+    }
 
-	public void setInvoiceNo(String invoiceNo) {
-		InvoiceNo = invoiceNo;
-	}
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
+    public String getCountry() {
+        return country;
+    }
 
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
-	public String getStockCode() {
-		return StockCode;
-	}
+    public String getInvoiceDate() {
+        return invoiceDate;
+    }
 
+    public void setInvoiceDate(String invoiceDate) {
+        this.invoiceDate = invoiceDate;
+    }
 
+    public int getQuantity() {
+        return quantity;
+    }
 
-	public void setStockCode(String stockCode) {
-		StockCode = stockCode;
-	}
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
+    public double getUnitPrice() {
+        return unitPrice;
+    }
 
+    public void setUnitPrice(double unitPrice) {
+        this.unitPrice = unitPrice;
+    }
 
-	public String getDescription() {
-		return Description;
-	}
+    public String getCustomerID() {
+        return customerID;
+    }
 
+    public void setCustomerID(String customerID) {
+        this.customerID = customerID;
+    }
 
-
-	public void setDescription(String description) {
-		Description = description;
-	}
-
-
-
-	public int getQuantity() {
-		return Quantity;
-	}
-
-
-
-	public void setQuantity(int quantity) {
-		Quantity = quantity;
-	}
-
-
-
-	public String getInvoiceDate() {
-		return InvoiceDate;
-	}
-
-
-
-	public void setInvoiceDate(String invoiceDate) {
-		InvoiceDate = invoiceDate;
-	}
-
-
-
-	public double getUnitPrice() {
-		return UnitPrice;
-	}
-
-
-
-	public void setUnitPrice(double unitPrice) {
-		UnitPrice = unitPrice;
-	}
-
-
-
-	public String getCustomerID() {
-		return CustomerID;
-	}
-
-
-
-	public void setCustomerID(String customerID) {
-		CustomerID = customerID;
-	}
-
-
-
-	public String getCountry() {
-		return Country;
-	}
-
-
-
-	public void setCountry(String country) {
-		Country = country;
-	} 
-
-  
-
-   
-    
 }
